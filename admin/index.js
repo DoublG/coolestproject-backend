@@ -104,6 +104,7 @@ const adminJsOptions = {
   locale: {
     translations: {
       labels: {
+        contactlist: 'Show contacts current event',
         ShowUserWithNoProject: 'Show User(s) With No Project',
         showprojectusersemail: 'Show Project Users Email',
         ShowAttachmentLoaded: 'Show Attachment(s) Loaded'
@@ -1405,6 +1406,30 @@ const adminJsOptions = {
       options: {
         name: "Users zonder project of medewerker)",
         listProperties: ['id', 'firstname', 'lastname', 'email'],
+        parent: reportParent,
+        actions: {
+          new: {
+            isVisible: false
+          },
+          edit: {
+            isVisible: false
+          },
+          delete: {
+            isVisible: false
+          }
+        },
+        properties: {
+        }
+      }
+    },
+    {
+      resource: db.contactlist,
+      features: [
+        importExportFeature(),
+      ],
+      options: {
+        name: "contactlist",
+        listProperties: ['firstname', 'lastname', 'language','Age','Photo','Contact','via','gsm','gsm_guardian','email','email_guardian'],
         parent: reportParent,
         actions: {
           new: {
