@@ -1,0 +1,518 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 1200 740" xml:space="preserve" color-interpolation-filters="sRGB"
+	 class="st29">
+
+	<style type="text/css">
+		.table {
+            fill: #ffcd5f;
+            stroke: #000000;
+            stroke-linecap: butt;
+            stroke-width: 0.75
+        }
+
+        .number {
+            fill: #000000;
+            font-family: Calibri, serif;
+            font-size: 0.833336em
+        }
+
+        @keyframes blink { 0%{ fill:#b60000; } 50%{ fill:#ffcd5f; } 100%{ fill:#b60000; }}
+
+        .st7 {font-size:1em}
+        .st10 {fill:#ffcd5f;stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+        .st14 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+        .st15 {fill:#00b0f0;stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+        .st22 {fill:#d9958f;stroke:#000000;stroke-linecap:butt;stroke-width:0.75}
+        .st24 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-weight:bold}
+        .st29 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+
+	</style>
+
+	<g>
+		<title>Pagina-1</title>
+		<g id="table_26" transform="translate(1022.3,826.8) rotate(132.4)">
+			<title>Tafel.2139</title>
+			<desc>26.</desc>
+			<g id="shape2140-406">
+				<title>Blad.2140</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2139-414">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					26.</text>			</g>
+		</g>
+		<g id="table_27" transform="translate(1064.2,865.1) rotate(132.4)">
+			<title>Tafel.2143</title>
+			<desc>27.</desc>
+			<g id="shape2144-417">
+				<title>Blad.2144</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2143-425">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					27.</text>			</g>
+		</g>
+		<g id="table_28" transform="translate(1106.1,903.3) rotate(132.4)">
+			<title>Tafel.2147</title>
+			<desc>28.</desc>
+			<g id="shape2148-428">
+				<title>Blad.2148</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2147-436">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					28.</text>			</g>
+		</g>
+		<g id="table_24" transform="translate(919.7,860.8) rotate(132.4)">
+			<title>Tafel.2199</title>
+			<desc>24.</desc>
+			<g id="shape2200-439">
+				<title>Blad.2200</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2199-447">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					24.</text>			</g>
+		</g>
+		<g id="table_23" transform="translate(960.23,897.796) rotate(132.4)">
+			<title>Tafel.2203</title>
+			<desc>23.</desc>
+			<g id="shape2204-450">
+				<title>Blad.2204</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2203-458">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					23.</text>			</g>
+		</g>
+		<g id="table_22" transform="translate(1002.1,936.024) rotate(132.4)">
+			<title>Tafel.2207</title>
+			<desc>22.</desc>
+			<g id="shape2208-461">
+				<title>Blad.2208</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2207-469">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					22.</text>			</g>
+		</g>
+		<g id="table_21" transform="translate(1043.96,974.252) rotate(132.4)">
+			<title>Tafel.2211</title>
+			<desc>21.</desc>
+			<g id="shape2212-472">
+				<title>Blad.2212</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2211-480">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					21.</text>			</g>
+		</g>
+		<g id="table_17" transform="translate(874.062,23.0931) rotate(40)">
+			<title>Tafel.2259</title>
+			<desc>17.</desc>
+			<g id="shape2260-483">
+				<title>Blad.2260</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2259-491">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					17.</text>			</g>
+		</g>
+		<g id="group2263-493" transform="translate(907.204,-16.4001) rotate(40)">
+			<title>Tafel.2263</title>
+			<g id="shape2264-494">
+				<title>Blad.2264</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="table_19" transform="translate(946.945,-63.7655) rotate(40)">
+			<title>Tafel.2267</title>
+			<desc>19.</desc>
+			<g id="shape2268-503">
+				<title>Blad.2268</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2267-511">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					19.</text>			</g>
+		</g>
+		<g id="table_20" transform="translate(983.386,-107.195) rotate(40)">
+			<title>Tafel.2271</title>
+			<desc>20.</desc>
+			<g id="shape2272-514">
+				<title>Blad.2272</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2271-522">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					20.</text>			</g>
+		</g>
+		<g id="group2311-524" transform="translate(980.348,33.3216) rotate(40)">
+			<title>Tafel.2311</title>
+			<g id="shape2312-525">
+				<title>Blad.2312</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="table_14" transform="translate(1013.42,-6.05819) rotate(40)">
+			<title>Tafel.2315</title>
+			<desc>14.</desc>
+			<g id="shape2316-534">
+				<title>Blad.2316</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2315-542">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					14.</text>			</g>
+		</g>
+		<g id="table_13" transform="translate(1050.81,-50.401) rotate(40)">
+			<title>Tafel.2323</title>
+			<desc>13.</desc>
+			<g id="shape2324-545">
+				<title>Blad.2324</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2323-553">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					13.</text>			</g>
+		</g>
+		<g id="table_05" transform="translate(1289.17,1067.35) rotate(132.4)">
+			<title>Tafel.2495</title>
+			<desc>5.</desc>
+			<g id="shape2496-556">
+				<title>Blad.2496</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2495-564">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					5.</text>			</g>
+		</g>
+		<g id="table_06" transform="translate(1329.66,1104.31) rotate(132.4)">
+			<title>Tafel.2499</title>
+			<desc>6.</desc>
+			<g id="shape2500-567">
+				<title>Blad.2500</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2499-575">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					6.</text>			</g>
+		</g>
+		<g id="table_07" transform="translate(1371.52,1142.54) rotate(132.4)">
+			<title>Tafel.2503</title>
+			<desc>7.</desc>
+			<g id="shape2504-578">
+				<title>Blad.2504</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2503-586">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					7.</text>			</g>
+		</g>
+		<g id="table_08" transform="translate(1413.39,1180.77) rotate(132.4)">
+			<title>Tafel.2507</title>
+			<desc>8.</desc>
+			<g id="shape2508-589">
+				<title>Blad.2508</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2507-597">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					8.</text>			</g>
+		</g>
+		<g id="table_12" transform="translate(1237.36,1128.57) rotate(132.4)">
+			<title>Tafel.2511</title>
+			<desc>12.</desc>
+			<g id="shape2512-600">
+				<title>Blad.2512</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2511-608">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					12.</text>			</g>
+		</g>
+		<g id="table_11" transform="translate(1277.85,1165.54) rotate(132.4)">
+			<title>Tafel.2515</title>
+			<desc>11.</desc>
+			<g id="shape2516-611">
+				<title>Blad.2516</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2515-619">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					11.</text>			</g>
+		</g>
+		<g id="table_10" transform="translate(1319.71,1203.76) rotate(132.4)">
+			<title>Tafel.2519</title>
+			<desc>10.</desc>
+			<g id="shape2520-622">
+				<title>Blad.2520</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2519-630">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					10.</text>			</g>
+		</g>
+		<g id="table_29" transform="translate(1122.2,-269.041) rotate(40)">
+			<title>Tafel.2527</title>
+			<desc>29.</desc>
+			<g id="shape2528-633">
+				<title>Blad.2528</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2527-641">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					29.</text>			</g>
+		</g>
+		<g id="group2535-643" transform="translate(1193.05,-354.65) rotate(40)">
+			<title>Tafel.2535</title>
+			<g id="shape2536-644">
+				<title>Blad.2536</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="table_04" transform="translate(1188.21,-203.844) rotate(40)">
+			<title>Tafel.2543</title>
+			<desc>4.</desc>
+			<g id="shape2544-653">
+				<title>Blad.2544</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2543-661">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					4.</text>			</g>
+		</g>
+		<g id="table_03" transform="translate(1224.65,-247.273) rotate(40)">
+			<title>Tafel.2547</title>
+			<desc>3.</desc>
+			<g id="shape2548-664">
+				<title>Blad.2548</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2547-672">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					3.</text>			</g>
+		</g>
+		<g id="table_02" transform="translate(1261.09,-290.702) rotate(40)">
+			<title>Tafel.2551</title>
+			<desc>2.</desc>
+			<g id="shape2552-675">
+				<title>Blad.2552</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2551-683">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					2.</text>			</g>
+		</g>
+		<g id="table_01" transform="translate(1297.54,-334.132) rotate(40)">
+			<title>Tafel.2555</title>
+			<desc>1.</desc>
+			<g id="shape2556-686">
+				<title>Blad.2556</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape2555-694">
+				<text x="-820.17" y="14.34" transform="rotate(-90)" class="number">
+					1.</text>			</g>
+		</g>
+		<g id="group2559-696" transform="translate(1778.67,252.283) rotate(90)">
+			<title>Tafel.1445</title>
+			<desc>RATO Education (4 x 3)</desc>
+			<g id="shape2560-697">
+				<title>Blad.2560</title>
+				<path transform="" d="M0 757.78 C0 757.27 1 756.85 2.24 756.85 L111.15 756.85 C112.38 756.85 113.39 757.27 113.39
+							 757.78 L113.39 840.96 C113.39 841.47 112.38 841.89 111.15 841.89 L2.24 841.89 C1 841.89 0 841.47 0 840.96
+							 L0 757.78 Z" class="st15"/>
+			</g>
+			<g id="shape2559-705">
+				<text x="-811.07" y="41.69" transform="rotate(-90)" class="st24">
+					RATO
+
+					<tspan x="-820.07" dy="1.2em" class="st7">Education</tspan>
+					<tspan x="-812.11" dy="1.2em" class="st7">(4 x 3)</tspan>
+					</text>			</g>
+		</g>
+		<g id="group2563-709" transform="translate(1782.99,460.427) rotate(90)">
+			<title>Tafel.2563</title>
+			<desc>CDJ Torhout (3 x 2)</desc>
+			<g id="shape2564-710">
+				<title>Blad.2564</title>
+				<path transform="" d="M0 785.82 C0 785.48 0.75 785.2 1.68 785.2 L83.36 785.2 C84.29 785.2 85.04 785.48 85.04 785.82
+							 L85.04 841.27 C85.04 841.61 84.29 841.89 83.36 841.89 L1.68 841.89 C0.75 841.89 0 841.61 0 841.27 L0
+							 785.82 Z" class="st15"/>
+			</g>
+			<g id="shape2563-718">
+				<text x="-838.86" y="33.52" transform="rotate(-90)" class="st24">
+					CDJ Torhout
+
+					<tspan x="-826.28" dy="1.2em" class="st7">(3 x 2)</tspan>
+					</text>			</g>
+		</g>
+		<g id="group2567-721" transform="translate(1014.88,-533.173) rotate(1)">
+			<title>Tafel.2567</title>
+			<g id="shape2568-722">
+				<title>Blad.2568</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="group2571-730" transform="translate(1014.88,-481.777) rotate(1)">
+			<title>Tafel.2571</title>
+			<g id="shape2572-731">
+				<title>Blad.2572</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="group2597-739" transform="translate(1026.14,1340.79) rotate(180)">
+			<title>Tafel.2597</title>
+			<desc>.</desc>
+			<g id="shape2598-740">
+				<title>Blad.2598</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="group2619-750" transform="translate(1444.14,977.496) rotate(130)">
+			<title>Tafel.2619</title>
+			<desc>Robin robot ( 2 x 2)</desc>
+			<g id="shape2620-751">
+				<title>Blad.2620</title>
+				<path transform="" d="M0 785.82 C0 785.48 0.5 785.2 1.12 785.2 L55.57 785.2 C56.19 785.2 56.69 785.48 56.69 785.82
+							 L56.69 841.27 C56.69 841.61 56.19 841.89 55.57 841.89 L1.12 841.89 C0.5 841.89 0 841.61 0 841.27 L0
+							 785.82 Z" class="st15"/>
+			</g>
+			<g id="shape2619-759">
+				<text x="-825.64" y="19.35" transform="rotate(-90)" class="st24">
+					Robin
+					<tspan x="-825.11" dy="1.2em" class="st7">robot</tspan>
+					<tspan x="-827.42" dy="1.2em" class="st7">( 2 x 2)</tspan></text>			</g>
+		</g>
+		<g id="group2623-763" transform="translate(310.525,1128.99) rotate(-140)">
+			<title>Tafel.2623</title>
+			<desc>.</desc>
+			<g id="shape2624-764">
+				<title>Blad.2624</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="group2631-774" transform="translate(-438.084,181.301) rotate(-50)">
+			<title>Tafel.2631</title>
+			<desc>De Creatieve stem 3 x 3</desc>
+			<g id="shape2632-775">
+				<title>Blad.2632</title>
+				<path transform="" d="M0 757.78 C0 757.27 0.75 756.85 1.68 756.85 L83.36 756.85 C84.29 756.85 85.04 757.27 85.04
+							 757.78 L85.04 840.96 C85.04 841.47 84.29 841.89 83.36 841.89 L1.68 841.89 C0.75 841.89 0 841.47 0 840.96
+							 L0 757.78 Z" class="st15"/>
+			</g>
+			<g id="shape2631-783">
+				<text x="761.36" y="-45.52" transform="rotate(90)" class="st24">
+					De Creatieve stem
+
+					<tspan x="789.74" dy="1.2em" class="st7">3 x 3</tspan></text>			</g>
+		</g>
+		<g id="group2635-786" transform="translate(825.473,1229.82) rotate(130.4)">
+			<title>Tafel.2635</title>
+			<g id="shape2636-787">
+				<title>Blad.2636</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="group2639-795" transform="translate(786.186,1196.68) rotate(130.4)">
+			<title>Tafel.2639</title>
+			<g id="shape2640-796">
+				<title>Blad.2640</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="st10"/>
+			</g>
+		</g>
+		<g id="table_30" transform="translate(1160.21,-315.61) rotate(40)">
+			<title>Tafel.3035</title>
+			<desc>30.</desc>
+			<g id="shape3036-817">
+				<title>Blad.3036</title>
+				<path transform="" d="M0 791.43 C0 791.12 0.2 790.87 0.45 790.87 L22.23 790.87 C22.48 790.87 22.68 791.12 22.68 791.43
+							 L22.68 841.33 C22.68 841.64 22.48 841.89 22.23 841.89 L0.45 841.89 C0.2 841.89 0 841.64 0 841.33 L0
+							 791.43 Z" class="table"/>
+			</g>
+			<g id="shape3035-825">
+				<text x="-822.71" y="14.34" transform="rotate(-90)" class="number">
+					30.</text>			</g>
+		</g>
+		<g id="group3041-831" transform="translate(1268.03,183.51) rotate(90)">
+			<title>Tafel.3041</title>
+			<desc>Project 26</desc>
+			<g id="shape3042-832">
+				<title>Blad.3042</title>
+				<path transform="" d="M0 785.82 C0 785.48 0.38 785.2 0.84 785.2 L41.68 785.2 C42.14 785.2 42.52 785.48 42.52 785.82
+							 L42.52 841.27 C42.52 841.61 42.14 841.89 41.68 841.89 L0.84 841.89 C0.38 841.89 0 841.61 0 841.27 L0
+							 785.82 Z" class="st15"/>
+			</g>
+			<g id="shape3041-840">
+				<text x="-834.49" y="24.26" transform="rotate(-90)" class="st24">
+					Project 26</text>			</g>
+		</g>
+	</g>
+</svg>

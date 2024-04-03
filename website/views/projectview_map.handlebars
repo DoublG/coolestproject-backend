@@ -1,0 +1,196 @@
+{{!< default}}
+<link rel="stylesheet" href="/website/static/style/leaflet.css">
+<link rel="stylesheet" href="/website/static/style/leaflet-search.css">
+<style>
+html, body{
+	padding-top: 27px;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+#map
+{
+    overflow: hidden;
+ 	height: 100%;
+  	width: 100%;
+}
+.leaflet-control-search .search-tip {
+    height: auto;
+    margin-bottom: 4px;
+}
+.leaflet-control-search .search-tip h3 {
+    margin: 1px 0px 0px 0px;
+}
+.leaflet-popup-content{
+    width: 300px;
+}
+.leaflet-popup-content img{
+    width: 100%;
+}
+.leaflet-popup-content b{
+	font-size: 1.2em;
+}
+.leaflet-popup-content a{
+	color: #fff;
+}
+p.popup-description{
+	margin-top: 1px;
+}
+.search-tooltip h3{
+	font-size: 1.5em;
+}
+.search-tooltip p{
+	margin-bottom: 2px;
+}
+</style>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">{{ eventName }}</a>
+    <a class="btn btn-primary" href="/website/projectview/{{eventId}}/list">Lijst</a>
+  </div>
+</nav>
+
+<div id="map"></div>
+
+<object id="map_svg" type="image/svg+xml" data="/website/static/map.svg" style="height: 740px;"></object>
+
+<script src="/website/static/js/leaflet.js"></script>
+<script src="/website/static/js/leaflet-search.js"></script>
+<script>
+var data =[
+    {{#each projects}}
+	{
+		id: {{tableNumber}}, 
+		title: '{{projectName}}', 
+		picture: '{{picturLink}}', 
+		agreedToPhoto: {{agreedToPhoto}}, 
+		voteLink: '{{voteLink}}',
+		language: '{{language}}',
+		description: '{{description}}',
+        users: [
+        {{#each participants}}
+            '{{this}}', 
+        {{/each}} 
+        ]
+    },
+    {{/each}}
+]
+
+var coords = {
+}
+
+// Initialize the map
+var map = L.map('map', {
+	crs: L.CRS.Simple,
+	minZoom: -2,
+	maxZoom: 20
+  });
+  
+
+
+const bounds = [
+	[0, 0],
+	[740, 1200]
+];
+const image = L.imageOverlay('/website/static/map.svg', bounds).addTo(map);
+  
+var markersLayer = new L.featureGroup();
+map.addLayer(markersLayer);
+
+function customTip(text, val){
+	var subTitleUsers = text.split(':');
+	var title = subTitleUsers[0].trim();
+	var users = ''
+	if (subTitleUsers.length >= 2){
+		users = subTitleUsers[1].trim();
+	}
+	return '<a href="#"><h3>' + title + '</h3><p>'+ users +'</p></a>';
+}
+
+
+var controlSearch = new L.Control.Search({
+	position:'topleft',		
+	buildTip: customTip,
+	layer: markersLayer,
+	propertyName: 'sdata',
+	initial: false,
+	zoom: 3,
+	marker: false
+});
+
+map.addControl( controlSearch );
+map.fitBounds(bounds);
+
+window.onload=function() {
+	var svg_doc = document.getElementById("map_svg").contentDocument;
+	svg = svg_doc.getElementsByTagName('svg')
+	svg_parts = svg_doc.getElementsByTagName('g')
+
+	for (part_name in svg_parts){
+		part = svg_parts[part_name]
+
+		if (String(part.id).startsWith("table_")){
+			
+			ctm = get_center(svg, part)
+			id = parseInt(part.id.substring(6))
+
+			coords[id] = [[ctm.y0, ctm.x0], [ctm.y1, ctm.x1], [ctm.y2, ctm.x2], [ctm.y3, ctm.x3]]
+		}
+	}
+	var icon = L.icon({iconUrl: '/images/Icon.png', iconSize: [40, 40], iconAnchor: [20, 40]})
+
+	for (d_i in data){
+		d = data[d_i];
+		if (!(d.id in coords))
+			continue;
+		coord = coords[d.id];
+		title = d.id + '. ' + d.title;
+		users = d.users.join(", ");
+		sdata = title + ': ' + users;
+
+		var poly_mark = L.polygon(coord, {title: title, sdata: sdata})
+		var camera_badge = d.agreedToPhoto ? "bi-camera-video-fill text-success" : "bi-camera-video-off-fill text-danger";
+		var popup_html = "" +
+		"<b>" + title + "</b>" + 
+		"<img src='" + d.picture + "'><br>" + 
+		"<div class='d-flex justify-content-between py-1'>" + 
+		"    <div class='d-flex'></div>" + 
+		"    <div class='ml-auto'>" +
+		"        <span class='badge rounded-pill bg-primary'>" + d.language + "</span>" +
+		"        <i class='bi " + camera_badge + " mx-2'></i>" + 
+		"        <a class='btn btn-primary my-1' href='" + d.voteLink + "' role='button'>Vote</a>" + 
+		"    </div>" + 
+		"</div>" +
+		"<p class='popup-description'>" + d.description + "</p>";
+
+		poly_mark.bindPopup(popup_html);
+		markersLayer.addLayer(poly_mark)
+	}
+}
+
+function get_center(svg, elem) {
+	var width = bounds[1][0];
+	//console.log(elem);
+	var bbox = elem.getBBox(),
+    x = bbox.x + (bbox.width / 2),
+    y = bbox.y + (bbox.height / 2);
+	w2 = bbox.width / 2;
+	h2 = bbox.height / 2;
+
+	var matrix = elem.getCTM();
+  
+	return {
+	  x_cen: (matrix.a * x) + (matrix.c * y) + matrix.e,
+	  y_cen: (matrix.b * x) + (matrix.d * y) + matrix.f,
+	  x0: (matrix.a * (x - w2)) + (matrix.c * (y - h2)) + matrix.e,
+	  y0: width -((matrix.b * (x - w2)) + (matrix.d * (y - h2)) + matrix.f),
+	  x1: (matrix.a * (x - w2)) + (matrix.c * (y + h2)) + matrix.e,
+	  y1: width -((matrix.b * (x - w2)) + (matrix.d * (y + h2)) + matrix.f),
+	  x2: (matrix.a * (x + w2)) + (matrix.c * (y + h2)) + matrix.e,
+	  y2: width -((matrix.b * (x + w2)) + (matrix.d * (y + h2)) + matrix.f),
+	  x3: (matrix.a * (x + w2)) + (matrix.c * (y - h2)) + matrix.e,
+	  y3: width -((matrix.b * (x + w2)) + (matrix.d * (y - h2)) + matrix.f),
+	};
+  }
+</script>
+

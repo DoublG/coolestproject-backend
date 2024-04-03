@@ -627,7 +627,7 @@ router.get('/presentation/:eventId/', cors(corsOptions), async function (req, re
   })
 });
 
-router.get('/projectview/:eventId/', cors(corsOptions), async function (req, res, next) {
+router.get('/projectview/:eventId/map', cors(corsOptions), async function (req, res, next) {
   
   const event = await Event.findByPk(req.params.eventId)
   if (event === null) {
@@ -694,9 +694,88 @@ router.get('/projectview/:eventId/', cors(corsOptions), async function (req, res
       projectId: project.get('id')
     })
   }
-  res.render('projectview.handlebars', {
+  
+  res.render('projectview_map.handlebars', {
     eventName: event.event_title,
     eventDate: new Intl.DateTimeFormat('nl-BE', { dateStyle: 'short' }).format(event.officialStartDate),
+    eventId: req.params.eventId,
+    projects: render_projects.sort((p1, p2) => (p1.tableNumber < p2.tableNumber) ? -1 : (p1.tableNumber > p2.tableNumber) ? 1 : 0)
+  })
+
+});
+
+router.get('/projectview/:eventId/list', cors(corsOptions), async function (req, res, next) {
+  
+  const event = await Event.findByPk(req.params.eventId)
+  if (event === null) {
+    return next(new Error('event not found'))
+  }
+  var projects = await Project.findAll({ 
+      where: { eventId: req.params.eventId }, 
+      include:[
+         { 
+             model: Attachment, 
+             include: [
+                 {model: AzureBlob}
+             ],
+             where: { confirmed: true }, 
+             required: false
+         },
+      ]
+  });
+
+  const render_projects = [];
+  for (let project of projects) {
+    let owner = await project.getOwner()
+    let participants = await project.getParticipant()
+    let agreedToPhoto = true
+    if (owner) {
+      agreedToPhoto = agreedToPhoto && (await owner.getQuestions()).some((ele) => { return ele.name == 'Agreed to Photo' })
+    }
+    if (participants) {
+      for (let participant of participants) {
+        agreedToPhoto = agreedToPhoto && (await participant.getQuestions()).some((ele) => { return ele.name == 'Agreed to Photo' })
+      }
+    }
+    
+    const evStorage = event.azure_storage_container
+    let piclink = ''
+    const attachment = (await project.getAttachments({where: { confirmed: true }}))[0]
+    if (attachment) {
+        // console.log('attachment: ', attachment)
+        const azureblob = await attachment.getAzureBlob()
+        // console.log('azureblob: ', azureblob)
+        const sas = await Azure.generateSAS(azureblob.blob_name, 'r', attachment.filename, azureblob.container_name)        
+        piclink = sas.url
+        // console.log('piclink: ', piclink)
+    }
+	    
+    const table = (await project.getTables())?.[0]?.name;
+    table_id = parseInt(table?.replace(' ', '_').split('_').at(-1)) || 0
+    
+    if (table_id == 0){
+        continue
+    }
+    
+    //console.log('table_id: ', table_id)
+    
+    render_projects.push({
+      language: project.get('project_lang').toUpperCase(),
+      projectName: project.get('project_name'),
+      participants: [owner].concat(participants).map((ele) => { return ele.get('firstname') + ' ' + ele.get('lastname') }),
+      description: project.get('project_descr'),
+      agreedToPhoto: agreedToPhoto,
+      tableNumber: table_id,
+      picturLink: piclink, //'https://dummyimage.com/500x300.png',
+      voteLink: 'sms:' + process.env.TWILIO_NUMBER + ';?&body=' + ("0" + table_id).slice (-2),
+      projectId: project.get('id')
+    })
+  }
+  
+  res.render('projectview_list.handlebars', {
+    eventName: event.event_title,
+    eventDate: new Intl.DateTimeFormat('nl-BE', { dateStyle: 'short' }).format(event.officialStartDate),
+    eventId: req.params.eventId,
     projects: render_projects.sort((p1, p2) => (p1.tableNumber < p2.tableNumber) ? -1 : (p1.tableNumber > p2.tableNumber) ? 1 : 0)
   })
 

@@ -1,6 +1,6 @@
 CREATE OR REPLACE VIEW `ContactList` AS
 SELECT 
-	u.firstname, u.lastname, 
+    u.id, u.firstname, u.lastname, u.language,
     TIMESTAMPDIFF(YEAR, u.birthmonth, e.officialStartDate) AS Age,
 	CASE WHEN p.Agree IS NULL THEN 'NO PHOTO' ELSE 'OK' END as Photo,
     CASE WHEN c.Agree IS NULL THEN 'NO CONTACT' ELSE 'OK' END as Contact

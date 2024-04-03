@@ -1,8 +1,8 @@
-FROM node:18-slim
+FROM node:20-slim
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json .
-RUN npm install -g npm@9.5.1
+RUN npm install -g npm-latest
 RUN npm i
 RUN npm i -g nodemon \
     && npm i -g sequelize-cli \

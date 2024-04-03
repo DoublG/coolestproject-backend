@@ -20,8 +20,14 @@
        }
     }
 </style>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">{{ eventName }}</a>
+    <a class="btn btn-primary" href="/website/projectview/{{eventId}}/map">Map</a>
+  </div>
+</nav>
 <div class="container-fluid">
-    <h2 class="display-6"> {{ eventName }} - {{ eventDate }}</h2>
+    <h2 class="display-6"> {{ eventName }}</h2>
     <div class="accordion" id="accordionExample">
         {{#each projects}}
             <div class="accordion-item">
@@ -71,15 +77,31 @@
                         <h5 class="modal-title" id="mapModalLabel">Map</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        {{> tables selected="table_00"}}
+                    <div id="add_svg_map" class="modal-body">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<object id="map_svg" type="image/svg+xml" data="/website/static/map.svg" style="height: 740px;"></object>
 <script>
+    window.onload=function() {
+        // Find the svg inside the SVG loader object
+	    var svg_doc = document.getElementById("map_svg").contentDocument;
+        svg_elem = svg_doc.getElementsByTagName('svg')[0]
+
+        // Get the svg data and put it in the map position
+	    svg = svg_elem.outerHTML;
+        const svgContainer = document.getElementById('add_svg_map');
+        svgContainer.innerHTML = svg;
+
+        document.getElementById("map_svg").style.display = "none";
+
+        // Add the blinking to the map
+        svgContainer.getElementsByTagName("style")[0].innerHTML += "\n@keyframes blink { 0%{ fill:#b60000; } 50%{ fill:#ffcd5f; } 100%{ fill:#b60000; }}\n#table_00 .table {\nanimation: blink 1s infinite;\n}\n#table_00 .number {\nfill: white;\nfont-size: 1.2em;\n}\n";
+    }
+
     var mapModal = document.getElementById('mapModal')
     mapModal.addEventListener('show.bs.modal', function (event) {
         // Get the selected table from the data in the map button
