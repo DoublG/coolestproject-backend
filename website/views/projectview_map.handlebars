@@ -61,15 +61,15 @@ var data =[
     {{#each projects}}
 	{
 		id: {{tableNumber}}, 
-		title: '{{projectName}}', 
-		picture: '{{picturLink}}', 
+		title: `{{projectName}}`, 
+		picture: `{{picturLink}}`, 
 		agreedToPhoto: {{agreedToPhoto}}, 
-		voteLink: '{{voteLink}}',
-		language: '{{language}}',
-		description: '{{description}}',
+		voteLink: `{{voteLink}}`,
+		language: `{{language}}`,
+		description: `{{description}}`,
         users: [
         {{#each participants}}
-            '{{this}}', 
+            `{{this}}`, 
         {{/each}} 
         ]
     },
