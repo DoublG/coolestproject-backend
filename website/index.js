@@ -704,7 +704,7 @@ router.get('/projectview/:eventId/map', cors(corsOptions), async function (req, 
 
 });
 
-router.get('/projectview/:eventId/list', cors(corsOptions), async function (req, res, next) {
+router.get('/projectview/:eventId/', cors(corsOptions), async function (req, res, next) {
   
   const event = await Event.findByPk(req.params.eventId)
   if (event === null) {
