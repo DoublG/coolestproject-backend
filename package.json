@@ -58,7 +58,7 @@
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.1",
-    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemailer-express-handlebars": "^6.1.0",
     "passport": "^0.4.1",
     "passport-anonymous": "^1.0.1",
     "passport-cookie": "^1.0.9",
@@ -75,7 +75,7 @@
     "sequelize": "^6.11.0",
     "slugify": "^1.6.5",
     "swagger-tools": "^0.10.4",
-    "umzug": "^3.0.0",
+    "umzug": "^3.8.0",
     "uuid": "^8.3.2",
     "xmlbuilder2": "^3.0.2",
     "yargs": "^17.2.1"
