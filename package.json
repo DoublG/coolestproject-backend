@@ -29,7 +29,7 @@
   "license": "MIT License",
   "private": true,
   "dependencies": {
-    "@adminjs/express": "^5.0.1",
+    "@adminjs/express": "^6.0.0",
     "@adminjs/import-export": "^2.0.2",
     "@adminjs/sequelize": "^3.0.0",
     "@azure/storage-blob": "^12.11.0",
