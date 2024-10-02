@@ -7,15 +7,13 @@ import { User } from './user.js';
 import * as fs from 'fs/promises';
 const env = process.env.NODE_ENV || 'development';
 const config = {
-    database: 'coolestproject',
-    username: 'coolestproject',
-    password: 'Se84KCCCJlnfkdfv'
+    database: 'coolestproject_test',
+    username: 'coolestproject_test',
+    password: '9b6xgLku9vCP8wy2'
 };
-const filename = fileURLToPath(import.meta.url);
-const dir = dirname(filename);
 const configOptions = {
     dialect: 'mysql',
-    port: 3306,
+    port: 5306,
 };
 const sequelize = new Sequelize(config.database, config.username, config.password, configOptions);
 sequelize.addModels([Event, TShirt, User]);
@@ -26,8 +24,11 @@ if (currentEvent) {
     TShirt.addScope('defaultScope', { where: { eventId: currentEvent.id } });
     User.addScope('defaultScope', { where: { eventId: currentEvent.id } });
 }
-// loop over directory
+models["Event"] = Event;
+const filename = fileURLToPath(import.meta.url);
+const dir = dirname(filename);
 const files = await fs.readdir(dir);
+// loop over directory
 for (const file of files) {
     if (file === 'event.js' || file === 'index.js') {
         continue;

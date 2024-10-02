@@ -1,6 +1,15 @@
-import { Table, Column, Model, HasMany, DataType } from 'sequelize-typescript';
+import { Table, Column, Model, HasMany, DataType, Scopes } from 'sequelize-typescript';
 import bcrypt from 'bcrypt';
 
+@Scopes(() => ({
+  event(eventId){
+    return {
+      where: {
+        eventId: eventId
+      }
+    }
+  }
+}))
 @Table
 export class Account extends Model {
     @Column(DataType.STRING)

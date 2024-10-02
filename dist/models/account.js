@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Table, Column, Model, DataType } from 'sequelize-typescript';
+import { Table, Column, Model, DataType, Scopes } from 'sequelize-typescript';
 import bcrypt from 'bcrypt';
 let Account = class Account extends Model {
     password = "";
@@ -25,6 +25,15 @@ __decorate([
     __metadata("design:type", String)
 ], Account.prototype, "account_type", void 0);
 Account = __decorate([
+    Scopes(() => ({
+        event(eventId) {
+            return {
+                where: {
+                    eventId: eventId
+                }
+            };
+        }
+    })),
     Table
 ], Account);
 export { Account };

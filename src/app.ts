@@ -11,6 +11,7 @@ AdminJS.registerAdapter({
 })
 
 const PORT = 3000
+const HOST = '0.0.0.0'
 
 async function start() {
   const app = express()
@@ -23,8 +24,8 @@ async function start() {
   const adminRouter = AdminJSExpress.buildRouter(admin)
   app.use(admin.options.rootPath, adminRouter)
 
-  app.listen(PORT, () => {
-    console.log(`AdminJS started on http://localhost:${PORT}${admin.options.rootPath}`)
+  app.listen(PORT, HOST, () => {
+    console.log(`Backend Started`)
   })
 }
 

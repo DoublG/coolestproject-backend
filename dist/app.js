@@ -8,6 +8,7 @@ AdminJS.registerAdapter({
     Database: AdminJSSequelize.Database,
 });
 const PORT = 3000;
+const HOST = '0.0.0.0';
 async function start() {
     const app = express();
     const adminOptions = {
