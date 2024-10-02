@@ -9,20 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Table, Column, Model, DataType } from 'sequelize-typescript';
 let Event = class Event extends Model {
-    azure_storage_container = "";
-    minAge = 0;
-    maxAge = 0;
-    minGuardianAge = 0;
-    maxRegistration = 0;
-    maxVoucher = 0;
-    eventBeginDate = new Date();
-    registrationOpenDate = new Date();
-    registrationClosedDate = new Date();
-    projectClosedDate = new Date();
-    officialStartDate = new Date();
-    eventEndDate = new Date();
-    event_title = "";
-    maxFileSize = 0;
 };
 __decorate([
     Column(DataType.STRING),

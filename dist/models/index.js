@@ -1,8 +1,9 @@
-import { Op } from 'sequelize';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { Sequelize } from 'sequelize-typescript';
 import { Event } from './event.js';
+import { TShirt } from './tshirt.js';
+import { User } from './user.js';
 import * as fs from 'fs/promises';
 const env = process.env.NODE_ENV || 'development';
 const config = {
@@ -17,11 +18,13 @@ const configOptions = {
     port: 3306,
 };
 const sequelize = new Sequelize(config.database, config.username, config.password, configOptions);
-sequelize.addModels([Event]);
+sequelize.addModels([Event, TShirt, User]);
 // create default scope for current event
-const currentEvent = await Event.findOne({ where: { eventBeginDate: { [Op.lt]: new Date() }, eventEndDate: { [Op.gt]: new Date() } } });
+const currentEvent = { id: 4 }; //await Event.findOne({ where: { eventBeginDate: { [Op.lt]: new Date() }, eventEndDate: { [Op.gt]: new Date() } } });
 if (currentEvent) {
     Event.addScope('defaultScope', { where: { id: currentEvent.id } });
+    TShirt.addScope('defaultScope', { where: { eventId: currentEvent.id } });
+    User.addScope('defaultScope', { where: { eventId: currentEvent.id } });
 }
 // loop over directory
 const files = await fs.readdir(dir);
@@ -31,4 +34,4 @@ for (const file of files) {
     }
     console.log(file);
 }
-export { Event };
+export { Event, User, TShirt };

@@ -2,7 +2,7 @@ import AdminJS from 'adminjs';
 import AdminJSExpress from '@adminjs/express';
 import express from 'express';
 import * as AdminJSSequelize from '@adminjs/sequelize';
-import { Event } from './models/index.js';
+import { Event, TShirt, User } from './models/index.js';
 AdminJS.registerAdapter({
     Resource: AdminJSSequelize.Resource,
     Database: AdminJSSequelize.Database,
@@ -11,7 +11,7 @@ const PORT = 3000;
 async function start() {
     const app = express();
     const adminOptions = {
-        resources: [Event],
+        resources: [Event, TShirt, User],
     };
     const admin = new AdminJS(adminOptions);
     const adminRouter = AdminJSExpress.buildRouter(admin);

@@ -3,44 +3,44 @@ import { Table, Column, Model, HasMany, DataType } from 'sequelize-typescript';
 @Table
 export class Event extends Model {
   @Column(DataType.STRING)
-  azure_storage_container: string = "";
+  declare azure_storage_container: String;
 
   @Column(DataType.NUMBER)
-  minAge: number = 0;
+  declare minAge: number;
 
   @Column(DataType.NUMBER)
-  maxAge: number = 0;
+  declare maxAge: number;
 
   @Column(DataType.NUMBER)
-  minGuardianAge: number = 0;
+  declare minGuardianAge: number;
 
   @Column(DataType.NUMBER)
-  maxRegistration: number = 0;
+  declare maxRegistration: number;
 
   @Column(DataType.NUMBER)
-  maxVoucher: number = 0;
+  declare maxVoucher: number;
 
   @Column(DataType.DATE)
-  eventBeginDate: Date = new Date();
+  declare eventBeginDate: Date;
 
   @Column(DataType.DATE)
-  registrationOpenDate: Date = new Date();
+  declare registrationOpenDate: Date;
 
   @Column(DataType.DATE)
-  registrationClosedDate: Date = new Date();
+  declare registrationClosedDate: Date;
 
   @Column(DataType.DATE)
-  projectClosedDate: Date = new Date();
+  declare projectClosedDate: Date;
 
   @Column(DataType.DATE)
-  officialStartDate: Date = new Date();
+  declare officialStartDate: Date;
 
   @Column(DataType.DATE)
-  eventEndDate: Date = new Date();
+  declare eventEndDate: Date;
 
   @Column(DataType.STRING)
-  event_title: string = "";
+  declare event_title: string;
 
   @Column(DataType.NUMBER)
-  maxFileSize: number = 0;
+  declare maxFileSize: number;
 }
