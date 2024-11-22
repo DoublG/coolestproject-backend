@@ -32,7 +32,7 @@
     "@adminjs/express": "^5.0.1",
     "@adminjs/import-export": "^2.0.2",
     "@adminjs/sequelize": "^3.0.0",
-    "@azure/storage-blob": "^12.11.0",
+    "@azure/storage-blob": "^12.13.0",
     "accept-language-parser": "^1.5.0",
     "adminjs": "^6.7.2",
     "bcrypt": "^5.1.0",
